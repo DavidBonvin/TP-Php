@@ -19,15 +19,27 @@
 
 //     return $array;
 // }
-function genererPlacement(array $places, array $listeStag): array
-{
-    $newTab = []; 
+// function genererPlacement(array $places, array $listeStag): array
+// {
+//     $newTab = []; 
+//     shuffle($listeStag);
+//         for ($i = 0; $i < sizeof($listeStag); $i++) {
+//             array_push($newTab, $places[$i] . " => " . $listeStag[$i] . "\n");
+//         }
+//         return $newTab;
+//     };
+//     print_r($newTab);
+function genererPlacement(array $places, array $listeStag):array{
+        
     shuffle($listeStag);
-        for ($i = 0; $i < sizeof($listeStag); $i++) {
-            array_push($newTab, $places[$i] . " => " . $listeStag[$i] . "\n");
-        }
-        return $newTab;
-    };
+    for ($i=0; $i < sizeof($places); $i++) { 
+        
+        $tabPlacement[$places[$i]] = $listeStag[$i];
+    }
+    return $tabPlacement;
+}; 
+
+
 
 //prend en parametre le tableau associatif mélangé et le sauvegarde dans un fichier CSV sur le disque dur dans ./save
 //le nom du fichier doit etre sous le format "save_'datetime'.csv"

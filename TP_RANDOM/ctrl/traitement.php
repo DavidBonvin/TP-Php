@@ -1,6 +1,7 @@
 <?php 
-include "../modele/functions.php";
 session_start();
+include "../modele/functions.php";
+
 // liste des places
 $places = array (
 "Place_1"
@@ -40,7 +41,7 @@ $listeStag = array ("Janello Morgan"
 
 
 $tabPlacement =genererPlacement($places,$listeStag); 
-print_r($tabPlacement) ;
+print_r($tabPlacement);
 
 sauvegarderPlacement($tabPlacement);
 

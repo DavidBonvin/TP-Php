@@ -1,8 +1,9 @@
+
 .salonDeClases{
     width: 810px;
     margin-left: 30%;
     margin-top: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 100px;
 }
 p {margin: 1px;}
 .carre123{
@@ -55,18 +56,11 @@ grid-row-gap: 0px;
 .place11{grid-area: 5 / 1 / 6 / 2;}
 .place12{grid-area: 5 / 3 / 6 / 4; }
 .carre5{
+    margin-top: 50px;
     width: 200px;
 }
 
-.buttonMelonge{
-   margin-top: 50%;
-   margin-left: 10%;
-   width: 150px;
-   height: 70px;
-   background-color: black;
-   color: white;
-   font-size: larger;
-}
+
 
 .carre6{
     width: 300px;
